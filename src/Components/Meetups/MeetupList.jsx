@@ -6,7 +6,10 @@ const MeetupList = (props) => {
     <ul className={classes.list}>
         {props.meetups.map((meetup)=><MeetupItems key={meetup.id} 
         id = {meetup.id} 
-        image= {meetup.image} title={meetup.title} description = {meetup.description} />)}
+        image= {meetup.image} 
+        address = {meetup.address}
+        title={meetup.title} 
+        description = {meetup.description} />)}
     </ul>
   )
 }
